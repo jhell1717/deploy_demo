@@ -14,3 +14,8 @@ The live ML model can be accessed by sending a HTTP POST request with:
 
 
 ```curl -X POST https://predict-api.yellowsand-55c50e72.uksouth.azurecontainerapps.io/predict \-H "Content-Type: application/json" \ -d '{"x":[1,2,3]}'```
+
+* The values specified will be the ```x``` inputs into the trained RandomForestRegressor model.
+* The outputs will appear as:
+
+```{"y":[10.6708285874085,22.530559201099805,43.02959271741495]}```

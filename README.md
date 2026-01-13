@@ -11,5 +11,6 @@
 * Hosting in the cloud allows me to specify the minimum and maximum number of containers to run at any instance, as well as enabling Azure to manage auto scaling of resource to satisfy demand. 
 
 The live ML model can be accessed by sending a HTTP POST request with:
-\n
+
+
 ```curl -X POST https://predict-api.yellowsand-55c50e72.uksouth.azurecontainerapps.io/predict \-H "Content-Type: application/json" \ -d '{"x":[1,2,3]}'```
